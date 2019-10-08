@@ -28,6 +28,13 @@ PRODUCT_PACKAGES += \
     libinit_oneplus7pro
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+	ro.lmk.use_psi=true \
+	ro.lmk.debug=true \
+	ro.lmk.swap_free_low_percentage=20 \
+	ro.lmk.thrashing_limit=100 \
+	ro.lmk.thrashing_limit_decay=10 \
+	ro.lmk.psi_partial_stall_ms=70 \
+	ro.lmk.psi_complete_stall_ms=700 \
     ro.build.version.all_codenames=$(PLATFORM_VERSION_ALL_CODENAMES) \
     ro.build.version.codename=$(PLATFORM_VERSION_CODENAME) \
     ro.build.version.release=$(PLATFORM_VERSION) \
